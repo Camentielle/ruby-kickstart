@@ -3,10 +3,17 @@
 
 # Write a program that reads in two integers typed on the keybaord
 # and outputs their sum, difference, and product
-# 
+#
 # Standard input will be like "9 2\n" and will expect you to print
 # "11\n7\n18\n" to standard output.
 
 def sum_difference_product
-  # your code goes here
+  int = gets.chomp
+  int_arr = int.split
+  int1 = int_arr[0].to_i
+  int2 = int_arr[1].to_i
+  int_sum = int1 + int2
+  int_dif = int1 - int2
+  int_prod = int1 * int2
+  print "#{int_sum}\n#{int_dif}\n#{int_prod}\n"
 end

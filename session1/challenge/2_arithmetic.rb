@@ -13,6 +13,5 @@ def arithmetic2(a, b)
     return a.fdiv(2)
   elsif b < a
     return b.fdiv(2)
-  
   end
 end

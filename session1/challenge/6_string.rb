@@ -9,20 +9,16 @@
 
 def odds_and_evens(string, return_odds)
   if return_odds == true
-    string_copy = ""
+    string_copy = ''
     string.length.times do |i|
-      if i%2 == 1
-        string_copy = string_copy << string[i]
-      end
+      string_copy = string_copy << string[i] if i.odd?
     end
-    return string_copy
+    string_copy
   else
-    string_copy = ""
+    string_copy = ''
     string.length.times do |i|
-      if i%2 == 0
-        string_copy = string_copy << string[i]
-      end
+      string_copy = string_copy << string[i] if i.even?
     end
-    return string_copy
+    string_copy
   end
 end
